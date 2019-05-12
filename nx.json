@@ -28,8 +28,8 @@
     "catalog-api": {
       "tags": ["domain:catalog", "domain:catalog/api", "type:api"]
     },
-    "catalog-data-access": {
-      "tags": ["domain:catalog", "type:data-access"]
+    "catalog-domain": {
+      "tags": ["domain:catalog", "type:domain-logic"]
     },
     "shared-util-auth": {
       "tags": ["domain:shared", "type:util"]

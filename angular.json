@@ -222,9 +222,9 @@
       },
       "schematics": {}
     },
-    "catalog-data-access": {
-      "root": "libs/catalog/data-access",
-      "sourceRoot": "libs/catalog/data-access/src",
+    "catalog-domain": {
+      "root": "libs/catalog/domain",
+      "sourceRoot": "libs/catalog/domain/src",
       "projectType": "library",
       "prefix": "e-proc",
       "architect": {
@@ -232,8 +232,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/catalog/data-access/tsconfig.lib.json",
-              "libs/catalog/data-access/tsconfig.spec.json"
+              "libs/catalog/domain/tsconfig.lib.json",
+              "libs/catalog/domain/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -241,9 +241,9 @@
         "test": {
           "builder": "@nrwl/builders:jest",
           "options": {
-            "jestConfig": "libs/catalog/data-access/jest.config.js",
-            "tsConfig": "libs/catalog/data-access/tsconfig.spec.json",
-            "setupFile": "libs/catalog/data-access/src/test-setup.ts"
+            "jestConfig": "libs/catalog/domain/jest.config.js",
+            "tsConfig": "libs/catalog/domain/tsconfig.spec.json",
+            "setupFile": "libs/catalog/domain/src/test-setup.ts"
           }
         }
       },

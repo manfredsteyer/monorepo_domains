@@ -27,7 +27,7 @@
       ],
       "@e-proc/catalog/api": ["libs/catalog/api/src/index.ts"],
      
-      "@e-proc/catalog/data-access": ["libs/catalog/data-access/src/index.ts"],
+      "@e-proc/catalog/domain": ["libs/catalog/domain/src/index.ts"],
      
       "@e-proc/shared/util-auth": ["libs/shared/util-auth/src/index.ts"],
       "@e-proc/approval/feature-approve-order": [
@@ -43,5 +43,9 @@
       "@e-proc/ordering/shell": ["libs/ordering/shell/src/index.ts"]
     }
   },
+  "files": [
+    "libs/catalog/feature-browse-products/src/lib/catalog-feature-browse-products.module.ts",
+    "libs/catalog/feature-request-product/src/lib/catalog-feature-request-product.module.ts"
+  ],
   "exclude": ["node_modules", "tmp"]
 }

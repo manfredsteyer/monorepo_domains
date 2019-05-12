@@ -17,11 +17,11 @@ import { RouterModule } from '@angular/router';
         loadChildren:
           '@e-proc/catalog/feature-browse-products#CatalogFeatureBrowseProductsModule'
       },
-      {
-        path: 'catalog-feature-search-products',
-        loadChildren:
-          '@e-proc/catalog/feature-search-products#CatalogFeatureSearchProductsModule'
-      }
+      // {
+      //   path: 'catalog-feature-search-products',
+      //   loadChildren:
+      //     '@e-proc/catalog/feature-search-products#CatalogFeatureSearchProductsModule'
+      // }
       /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
     ])
   ]

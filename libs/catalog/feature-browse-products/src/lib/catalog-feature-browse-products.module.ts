@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { CatalogDataAccessModule } from '@e-proc/catalog/data-access';
+import { CatalogDataAccessModule } from '@e-proc/catalog/domain';
 
 @NgModule({
   imports: [
