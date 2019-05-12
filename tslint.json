@@ -95,10 +95,13 @@
       {
         "allow": [],
         "depConstraints": [
-          { "sourceTag": "scope:app", "onlyDependOnLibsWithTags": ["scope:catalog", "scope:ordering"] },
-          { "sourceTag": "scope:catalog", "onlyDependOnLibsWithTags": ["scope:catalog", "scope:shared"] },
-          { "sourceTag": "scope:ordering", "onlyDependOnLibsWithTags": ["scope:ordering", "scope:catalog/api", "scope:shared"] },
-          { "sourceTag": "scope:shared", "onlyDependOnLibsWithTags": ["scope:shared"] },
+          { "sourceTag": "domain:app", "onlyDependOnLibsWithTags": ["domain:catalog", "domain:ordering"] },
+          
+          
+          
+          { "sourceTag": "domain:catalog", "onlyDependOnLibsWithTags": ["domain:catalog", "domain:shared"] },
+          { "sourceTag": "domain:ordering", "onlyDependOnLibsWithTags": ["domain:ordering", "domain:catalog/api", "domain:shared"] },
+          { "sourceTag": "domain:shared", "onlyDependOnLibsWithTags": ["domain:shared"] },
 
           { "sourceTag": "type:app", "onlyDependOnLibsWithTags": ["type:shell"] },
           { "sourceTag": "type:shell", "onlyDependOnLibsWithTags": ["type:feature", "type:util"] },

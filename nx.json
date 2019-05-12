@@ -9,41 +9,39 @@
   },
   "projects": {
     "ui": {
-      "tags": ["scope:app", "type:app"]
+      "tags": ["domain:app", "type:app"]
     },
     "ui-e2e": {
-      "tags": ["scope:e2e"]
+      "tags": ["domain:e2e"]
     },
     "catalog-shell": {
-      "tags": ["scope:catalog", "type:shell"]
+      "tags": ["domain:catalog", "type:shell"]
     },
+
+
     "catalog-feature-request-product": {
-      "tags": ["scope:catalog", "type:feature"]
+      "tags": ["domain:catalog", "type:feature"]
     },
     "catalog-feature-browse-products": {
-      "tags": ["scope:catalog", "type:feature"]
+      "tags": ["domain:catalog", "type:feature"]
     },
     "catalog-api": {
-      "tags": ["scope:catalog", "scope:catalog/api", "type:api"]
+      "tags": ["domain:catalog", "domain:catalog/api", "type:api"]
     },
     "catalog-data-access": {
-      "tags": ["scope:catalog", "type:data-access"]
+      "tags": ["domain:catalog", "type:data-access"]
     },
     "shared-util-auth": {
-      "tags": ["scope:shared", "type:util"]
+      "tags": ["domain:shared", "type:util"]
     },
     "ordering-feature-send-order": {
-      "tags": [
-        "scope:ordering",
-        "type:feature",
-        "name:ordering-feature-send-order"
-      ]
+      "tags": ["domain:ordering", "type:feature"]
     },
     "shared-ui-address": {
-      "tags": ["scope:shared", "type:ui"]
+      "tags": ["domain:shared", "type:ui"]
     },
     "ordering-shell": {
-      "tags": ["scope:ordering", "type:shell"]
+      "tags": ["domain:ordering", "type:shell"]
     }
   }
 }
