@@ -105,8 +105,8 @@
 
           { "sourceTag": "type:app", "onlyDependOnLibsWithTags": ["type:shell"] },
           { "sourceTag": "type:shell", "onlyDependOnLibsWithTags": ["type:feature", "type:util"] },
-          { "sourceTag": "type:feature", "onlyDependOnLibsWithTags": ["type:data-access", "type:util", "type:api", "type:ui"] },
-          { "sourceTag": "type:api", "onlyDependOnLibsWithTags": ["type:data-access", "type:util"] },
+          { "sourceTag": "type:feature", "onlyDependOnLibsWithTags": ["type:domain-logic", "type:util", "type:api", "type:ui"] },
+          { "sourceTag": "type:api", "onlyDependOnLibsWithTags": ["type:domain-logic", "type:util"] },
           { "sourceTag": "type:ui", "onlyDependOnLibsWithTags": ["type:util"] },
           { "sourceTag": "type:util", "onlyDependOnLibsWithTags": ["nothing"] }
         ]

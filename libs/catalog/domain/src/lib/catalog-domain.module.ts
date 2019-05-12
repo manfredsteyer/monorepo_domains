@@ -5,4 +5,4 @@ import { SharedUtilAuthModule } from '@e-proc/shared/util-auth';
 @NgModule({
   imports: [CommonModule, SharedUtilAuthModule]
 })
-export class CatalogDataAccessModule {}
+export class CatalogDomainModule {}
