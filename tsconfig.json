@@ -27,7 +27,9 @@
       ],
       "@e-proc/catalog/api": ["libs/catalog/api/src/index.ts"],
      
-      "@e-proc/catalog/domain": ["libs/catalog/domain/src/index.ts"],
+      "@e-proc/catalog/domain": [
+        "libs/catalog/domain/src/index.ts"
+      ],
      
       "@e-proc/shared/util-auth": ["libs/shared/util-auth/src/index.ts"],
       "@e-proc/approval/feature-approve-order": [
