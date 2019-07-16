@@ -10,7 +10,10 @@ describe('Service: CatalogRepository', () => {
     });
   });
 
-  it('should ...', inject([CatalogRepositoryService], (service: CatalogRepositoryService) => {
-    expect(service).toBeTruthy();
-  }));
+  it('should ...', inject(
+    [CatalogRepositoryService],
+    (service: CatalogRepositoryService) => {
+      expect(service).toBeTruthy();
+    }
+  ));
 });

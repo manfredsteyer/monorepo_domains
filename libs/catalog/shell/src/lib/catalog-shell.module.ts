@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
         path: 'catalog-feature-browse-products',
         loadChildren:
           '@e-proc/catalog/feature-browse-products#CatalogFeatureBrowseProductsModule'
-      },
+      }
       // {
       //   path: 'catalog-feature-search-products',
       //   loadChildren:

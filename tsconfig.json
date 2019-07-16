@@ -37,6 +37,7 @@
       ],
       "@e-proc/shared/catalog/util-prices": [
         "libs/shared/catalog/util-prices/src/index.ts"
+        // "libs/shared/catalog/util-prices/src/index.ts"
       ],
       "@e-proc/ordering/feature-send-order": [
         "libs/ordering/feature-send-order/src/index.ts"
