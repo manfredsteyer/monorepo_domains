@@ -18,8 +18,14 @@
             "main": "apps/ui/src/main.ts",
             "polyfills": "apps/ui/src/polyfills.ts",
             "tsConfig": "apps/ui/tsconfig.app.json",
-            "assets": ["apps/ui/src/favicon.ico", "apps/ui/src/assets"],
-            "styles": ["apps/ui/src/styles.css"],
+            "assets": [
+              "apps/ui/src/favicon.ico",
+              "apps/ui/src/assets"
+            ],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "apps/ui/src/styles.css"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -74,7 +80,9 @@
               "apps/ui/tsconfig.app.json",
               "apps/ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -109,7 +117,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/ui-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -127,7 +137,9 @@
               "libs/catalog/shell/tsconfig.lib.json",
               "libs/catalog/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -154,7 +166,9 @@
               "libs/catalog/feature-request-product/tsconfig.lib.json",
               "libs/catalog/feature-request-product/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -181,7 +195,9 @@
               "libs/catalog/feature-browse-products/tsconfig.lib.json",
               "libs/catalog/feature-browse-products/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -208,7 +224,9 @@
               "libs/catalog/api/tsconfig.lib.json",
               "libs/catalog/api/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -235,7 +253,9 @@
               "libs/catalog/domain/tsconfig.lib.json",
               "libs/catalog/domain/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -262,7 +282,9 @@
               "libs/shared/util-auth/tsconfig.lib.json",
               "libs/shared/util-auth/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -289,7 +311,9 @@
               "libs/ordering/feature-send-order/tsconfig.lib.json",
               "libs/ordering/feature-send-order/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -316,7 +340,9 @@
               "libs/shared/ui-address/tsconfig.lib.json",
               "libs/shared/ui-address/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -343,7 +369,9 @@
               "libs/ordering/shell/tsconfig.lib.json",
               "libs/ordering/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
