@@ -124,35 +124,7 @@
         }
       }
     },
-    "catalog-shell": {
-      "root": "libs/catalog/shell",
-      "sourceRoot": "libs/catalog/shell/src",
-      "projectType": "library",
-      "prefix": "e-proc",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/catalog/shell/tsconfig.lib.json",
-              "libs/catalog/shell/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/builders:jest",
-          "options": {
-            "jestConfig": "libs/catalog/shell/jest.config.js",
-            "tsConfig": "libs/catalog/shell/tsconfig.spec.json",
-            "setupFile": "libs/catalog/shell/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {}
-    },
+
     "catalog-feature-request-product": {
       "root": "libs/catalog/feature-request-product",
       "sourceRoot": "libs/catalog/feature-request-product/src",
@@ -351,35 +323,6 @@
             "main": "libs/shared/ui-address/src/test.ts",
             "tsConfig": "libs/shared/ui-address/tsconfig.spec.json",
             "karmaConfig": "libs/shared/ui-address/karma.conf.js"
-          }
-        }
-      },
-      "schematics": {}
-    },
-    "ordering-shell": {
-      "root": "libs/ordering/shell",
-      "sourceRoot": "libs/ordering/shell/src",
-      "projectType": "library",
-      "prefix": "e-proc",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/ordering/shell/tsconfig.lib.json",
-              "libs/ordering/shell/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "libs/ordering/shell/src/test.ts",
-            "tsConfig": "libs/ordering/shell/tsconfig.spec.json",
-            "karmaConfig": "libs/ordering/shell/karma.conf.js"
           }
         }
       },

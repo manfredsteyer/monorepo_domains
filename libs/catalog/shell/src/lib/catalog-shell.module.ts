@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { CatalogFeatureBrowseProductsModule } from '@e-proc/catalog/feature-browse-products';
 
 @NgModule({
   imports: [
     CommonModule,
-
     RouterModule.forChild([
       {
         path: 'catalog-feature-request-product',

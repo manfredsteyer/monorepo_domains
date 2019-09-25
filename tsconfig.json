@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@e-proc/catalog/shell": ["libs/catalog/shell/src/index.ts"],
       "@e-proc/catalog/feature-request-product": [
         "libs/catalog/feature-request-product/src/index.ts"
       ],
@@ -37,13 +36,11 @@
       ],
       "@e-proc/shared/catalog/util-prices": [
         "libs/shared/catalog/util-prices/src/index.ts"
-        // "libs/shared/catalog/util-prices/src/index.ts"
       ],
       "@e-proc/ordering/feature-send-order": [
         "libs/ordering/feature-send-order/src/index.ts"
       ],
-      "@e-proc/shared/ui-address": ["libs/shared/ui-address/src/index.ts"],
-      "@e-proc/ordering/shell": ["libs/ordering/shell/src/index.ts"]
+      "@e-proc/shared/ui-address": ["libs/shared/ui-address/src/index.ts"]
     }
   },
   "files": [

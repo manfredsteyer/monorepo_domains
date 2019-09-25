@@ -14,9 +14,7 @@
     "ui-e2e": {
       "tags": ["domain:e2e"]
     },
-    "catalog-shell": {
-      "tags": ["domain:catalog", "type:shell"]
-    },
+
 
 
     "catalog-feature-request-product": {
@@ -40,9 +38,6 @@
     },
     "shared-ui-address": {
       "tags": ["domain:shared", "type:ui"]
-    },
-    "ordering-shell": {
-      "tags": ["domain:ordering", "type:shell"]
     }
   }
 }
