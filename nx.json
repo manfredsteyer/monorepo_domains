@@ -14,13 +14,9 @@
     "ui-e2e": {
       "tags": ["domain:e2e"]
     },
-
-
-
     "catalog-feature-request-product": {
       "tags": ["domain:catalog", "type:feature"]
     },
-    
     "catalog-feature-browse-products": {
       "tags": ["domain:catalog", "type:feature"]
     },
@@ -38,6 +34,9 @@
     },
     "shared-ui-address": {
       "tags": ["domain:shared", "type:ui"]
+    },
+    "ordering-domain": {
+      "tags": ["domain:ordering", "type:domain-logic"]
     }
   }
 }

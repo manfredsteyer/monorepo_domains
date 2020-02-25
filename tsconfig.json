@@ -25,11 +25,7 @@
         "libs/catalog/feature-search-products/src/index.ts"
       ],
       "@e-proc/catalog/api": ["libs/catalog/api/src/index.ts"],
-     
-      "@e-proc/catalog/domain": [
-        "libs/catalog/domain/src/index.ts"
-      ],
-     
+      "@e-proc/catalog/domain": ["libs/catalog/domain/src/index.ts"],
       "@e-proc/shared/util-auth": ["libs/shared/util-auth/src/index.ts"],
       "@e-proc/approval/feature-approve-order": [
         "libs/approval/feature-approve-order/src/index.ts"
@@ -40,7 +36,8 @@
       "@e-proc/ordering/feature-send-order": [
         "libs/ordering/feature-send-order/src/index.ts"
       ],
-      "@e-proc/shared/ui-address": ["libs/shared/ui-address/src/index.ts"]
+      "@e-proc/shared/ui-address": ["libs/shared/ui-address/src/index.ts"],
+      "@e-proc/ordering/domain": ["libs/ordering/domain/src/index.ts"]
     }
   },
   "files": [

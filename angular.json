@@ -18,10 +18,7 @@
             "main": "apps/ui/src/main.ts",
             "polyfills": "apps/ui/src/polyfills.ts",
             "tsConfig": "apps/ui/tsconfig.app.json",
-            "assets": [
-              "apps/ui/src/favicon.ico",
-              "apps/ui/src/assets"
-            ],
+            "assets": ["apps/ui/src/favicon.ico", "apps/ui/src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "apps/ui/src/styles.css"
@@ -80,9 +77,7 @@
               "apps/ui/tsconfig.app.json",
               "apps/ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "test": {
@@ -117,14 +112,11 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/ui-e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     },
-
     "catalog-feature-request-product": {
       "root": "libs/catalog/feature-request-product",
       "sourceRoot": "libs/catalog/feature-request-product/src",
@@ -138,9 +130,7 @@
               "libs/catalog/feature-request-product/tsconfig.lib.json",
               "libs/catalog/feature-request-product/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "test": {
@@ -167,9 +157,7 @@
               "libs/catalog/feature-browse-products/tsconfig.lib.json",
               "libs/catalog/feature-browse-products/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "test": {
@@ -196,9 +184,7 @@
               "libs/catalog/api/tsconfig.lib.json",
               "libs/catalog/api/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "test": {
@@ -225,9 +211,7 @@
               "libs/catalog/domain/tsconfig.lib.json",
               "libs/catalog/domain/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "test": {
@@ -254,9 +238,7 @@
               "libs/shared/util-auth/tsconfig.lib.json",
               "libs/shared/util-auth/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "test": {
@@ -283,9 +265,7 @@
               "libs/ordering/feature-send-order/tsconfig.lib.json",
               "libs/ordering/feature-send-order/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "test": {
@@ -312,9 +292,7 @@
               "libs/shared/ui-address/tsconfig.lib.json",
               "libs/shared/ui-address/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "test": {
@@ -323,6 +301,33 @@
             "main": "libs/shared/ui-address/src/test.ts",
             "tsConfig": "libs/shared/ui-address/tsconfig.spec.json",
             "karmaConfig": "libs/shared/ui-address/karma.conf.js"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "ordering-domain": {
+      "root": "libs/ordering/domain",
+      "sourceRoot": "libs/ordering/domain/src",
+      "projectType": "library",
+      "prefix": "e-proc",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ordering/domain/tsconfig.lib.json",
+              "libs/ordering/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/ordering/domain/jest.config.js",
+            "tsConfig": "libs/ordering/domain/tsconfig.spec.json",
+            "setupFile": "libs/ordering/domain/src/test-setup.ts"
           }
         }
       },
