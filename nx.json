@@ -12,7 +12,8 @@
       "tags": ["domain:app", "type:app"]
     },
     "ui-e2e": {
-      "tags": ["domain:e2e"]
+      "tags": ["domain:e2e"],
+      "implicitDependencies": ["ui"]
     },
     "catalog-feature-request-product": {
       "tags": ["domain:catalog", "type:feature"]
