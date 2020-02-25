@@ -10,12 +10,12 @@ import { CatalogFeatureBrowseProductsModule } from '@e-proc/catalog/feature-brow
       {
         path: 'catalog-feature-request-product',
         loadChildren:
-          '@e-proc/catalog/feature-request-product#CatalogFeatureRequestProductModule'
+          () => import('@e-proc/catalog/feature-request-product').then(m => m.CatalogFeatureRequestProductModule)
       },
       {
         path: 'catalog-feature-browse-products',
         loadChildren:
-          '@e-proc/catalog/feature-browse-products#CatalogFeatureBrowseProductsModule'
+          () => import('@e-proc/catalog/feature-browse-products').then(m => m.CatalogFeatureBrowseProductsModule)
       }
       // {
       //   path: 'catalog-feature-search-products',

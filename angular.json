@@ -81,7 +81,7 @@
           }
         },
         "test": {
-          "builder": "@nrwl/builders:jest",
+          "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/ui/jest.config.js",
             "tsConfig": "apps/ui/tsconfig.spec.json",
@@ -96,7 +96,7 @@
       "prefix": "",
       "architect": {
         "e2e": {
-          "builder": "@nrwl/builders:cypress",
+          "builder": "@nrwl/cypress:cypress",
           "options": {
             "cypressConfig": "apps/ui-e2e/cypress.json",
             "tsConfig": "apps/ui-e2e/tsconfig.e2e.json",
@@ -134,7 +134,7 @@
           }
         },
         "test": {
-          "builder": "@nrwl/builders:jest",
+          "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/catalog/feature-request-product/jest.config.js",
             "tsConfig": "libs/catalog/feature-request-product/tsconfig.spec.json",
@@ -161,7 +161,7 @@
           }
         },
         "test": {
-          "builder": "@nrwl/builders:jest",
+          "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/catalog/feature-browse-products/jest.config.js",
             "tsConfig": "libs/catalog/feature-browse-products/tsconfig.spec.json",
@@ -188,7 +188,7 @@
           }
         },
         "test": {
-          "builder": "@nrwl/builders:jest",
+          "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/catalog/api/jest.config.js",
             "tsConfig": "libs/catalog/api/tsconfig.spec.json",
@@ -215,7 +215,7 @@
           }
         },
         "test": {
-          "builder": "@nrwl/builders:jest",
+          "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/catalog/domain/jest.config.js",
             "tsConfig": "libs/catalog/domain/tsconfig.spec.json",
@@ -242,7 +242,7 @@
           }
         },
         "test": {
-          "builder": "@nrwl/builders:jest",
+          "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/shared/util-auth/jest.config.js",
             "tsConfig": "libs/shared/util-auth/tsconfig.spec.json",
@@ -323,7 +323,7 @@
           }
         },
         "test": {
-          "builder": "@nrwl/builders:jest",
+          "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/ordering/domain/jest.config.js",
             "tsConfig": "libs/ordering/domain/tsconfig.spec.json",
@@ -339,8 +339,12 @@
       "typescriptMismatch": false,
       "versionMismatch": false
     },
-    "defaultCollection": "@nrwl/schematics"
+    "defaultCollection": "@nrwl/angular"
   },
-  "schematics": {},
+  "schematics": {
+    "@nrwl/schematics:library": {
+      "framework": "angular"
+    }
+  },
   "defaultProject": "ui"
 }
