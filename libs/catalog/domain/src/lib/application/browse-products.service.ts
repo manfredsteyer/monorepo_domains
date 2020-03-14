@@ -6,15 +6,16 @@ import { Product } from '../entities/entities';
 @Injectable({ providedIn: 'root'})
 export class BrowseProductsService {
     
-    products$ = new BehaviorSubject<Product[]>([]);
-    
+    private productsSubject = new BehaviorSubject<Product[]>([]);
+    public products$ = this.productsSubject.asObservable();
+
     constructor(private productService: ProductService) { }
 
     load(): void {
+        
         this.productService.loadProducts().subscribe(
-            products => this.products$.next(products),
+            products => this.productsSubject.next(products),
             err => console.error('err', err)
         );
     }
-
 }
