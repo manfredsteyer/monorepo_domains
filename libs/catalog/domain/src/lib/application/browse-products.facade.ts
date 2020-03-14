@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 import { Product } from '../entities/entities';
 
 @Injectable({ providedIn: 'root'})
-export class BrowseProductsService {
+export class BrowseProductsFacade {
     
     private productsSubject = new BehaviorSubject<Product[]>([]);
     public products$ = this.productsSubject.asObservable();
@@ -12,7 +12,6 @@ export class BrowseProductsService {
     constructor(private productService: ProductService) { }
 
     load(): void {
-        
         this.productService.loadProducts().subscribe(
             products => this.productsSubject.next(products),
             err => console.error('err', err)
