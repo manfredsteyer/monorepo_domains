@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BrowseProductsService } from '@e-proc/catalog/domain';
+import { BrowseProductsFacade } from '@e-proc/catalog/domain';
 
 @Component({
   selector: 'e-proc-products',
@@ -10,7 +10,7 @@ export class ProductsComponent implements OnInit {
 
   products$ = this.browser.products$;
 
-  constructor(private browser: BrowseProductsService) { }
+  constructor(private browser: BrowseProductsFacade) { }
 
   ngOnInit() {
     this.browser.load();
