@@ -102,6 +102,17 @@
             ]
           },
           {
+            "sourceTag": "type:app",
+            "onlyDependOnLibsWithTags": [
+              "type:feature"
+            ]
+          },
+
+
+
+
+
+          {
             "sourceTag": "domain:catalog",
             "onlyDependOnLibsWithTags": [
               "domain:catalog",
@@ -122,12 +133,8 @@
               "domain:shared"
             ]
           },
-          {
-            "sourceTag": "type:app",
-            "onlyDependOnLibsWithTags": [
-              "type:feature"
-            ]
-          },
+
+          
           {
             "sourceTag": "type:feature",
             "onlyDependOnLibsWithTags": [
