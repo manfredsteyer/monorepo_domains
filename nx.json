@@ -15,29 +15,33 @@
       "tags": ["domain:e2e"],
       "implicitDependencies": ["ui"]
     },
+
+
     "catalog-feature-request-product": {
       "tags": ["domain:catalog", "type:feature"]
     },
     "catalog-feature-browse-products": {
       "tags": ["domain:catalog", "type:feature"]
     },
-    "catalog-api": {
-      "tags": ["domain:catalog", "domain:catalog/api", "type:api"]
-    },
     "catalog-domain": {
       "tags": ["domain:catalog", "type:domain-logic"]
     },
-    "shared-util-auth": {
-      "tags": ["domain:shared", "type:util"]
+    "catalog-api": {
+      "tags": ["domain:catalog", "domain:catalog/api", "type:api"]
+    },
+
+    "ordering-domain": {
+      "tags": ["domain:ordering", "type:domain-logic"]
     },
     "ordering-feature-send-order": {
       "tags": ["domain:ordering", "type:feature"]
     },
+
+    "shared-util-auth": {
+      "tags": ["domain:shared", "type:util"]
+    },
     "shared-ui-address": {
       "tags": ["domain:shared", "type:ui"]
-    },
-    "ordering-domain": {
-      "tags": ["domain:ordering", "type:domain-logic"]
     }
   }
 }
