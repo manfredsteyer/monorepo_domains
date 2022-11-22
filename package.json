@@ -69,7 +69,7 @@
     "jest": "24.1.0",
     "@types/jest": "24.0.9",
     "jest-preset-angular": "8.0.0",
-    "karma": "~3.0.0",
+    "karma": "~6.4.1",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.0",
