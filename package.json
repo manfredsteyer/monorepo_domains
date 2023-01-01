@@ -49,13 +49,13 @@
     "rxjs": "6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2",
-    "@nrwl/angular": "9.0.3"
+    "@nrwl/angular": "15.4.2"
   },
   "devDependencies": {
     "@angular/cli": "9.0.3",
     "@angular/compiler-cli": "^9.0.2",
     "@angular/language-service": "^9.0.2",
-    "@angular-devkit/build-angular": "~0.900.3",
+    "@angular-devkit/build-angular": "~15.0.4",
     "@ngrx/store-devtools": "8.3.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
@@ -81,6 +81,6 @@
     "@types/jasminewd2": "~2.0.3",
     "@nrwl/workspace": "9.0.3",
     "@nrwl/jest": "9.0.3",
-    "@nrwl/cypress": "9.0.3"
+    "@nrwl/cypress": "15.4.2"
   }
 }
